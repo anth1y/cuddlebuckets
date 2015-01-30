@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# this is to allow to list buckets
+require 'aws-sdk'
+
+AWS::S3::Service.buckets.each do |bucket|
+  puts "#{bucket.name}\t#{bucket.creation_date}"
+date
