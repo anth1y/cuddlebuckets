@@ -1,9 +1,9 @@
 ---
   # This value should be the FQDN of your server / instance
-  server:
+  :server: ""
   # The values are true/false off or on
-  use_ssl:
+  :use_ssl: ""
   
-  access_key_id:
+  :access_key_id: ""
 
-  secret_access_key:
+  :secret_access_key: ""
