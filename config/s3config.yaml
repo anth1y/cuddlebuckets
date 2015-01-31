@@ -1,0 +1,9 @@
+---
+  # This value should be the FQDN of your server / instance
+  server:
+  # The values are true/false off or on
+  use_ssl:
+  
+  access_key_id:
+
+  secret_access_key:
