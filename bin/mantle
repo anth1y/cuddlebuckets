@@ -1,7 +1,17 @@
 #!/usr/bin/env ruby
 # this is to allow to list buckets
 require 'aws-sdk'
+require 'yaml'
+
+
+AWS::S3::Base.establish_connections!(
+	  <%= APP_CONFIG[:server] %>,
+	  <%= APP_CONFIG[:use_ssl] %>,
+	  <%= APP_CONFIG[:access_key_id] %>,
+	  <%= APP_CONFIG[:secret_access_key] %>, 
+)
+
 
 AWS::S3::Service.buckets.each do |bucket|
   puts "#{bucket.name}\t#{bucket.creation_date}"
-date
+end
